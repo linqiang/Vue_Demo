@@ -17,44 +17,22 @@
   
   <script setup>
 
-  import homeNavBar from './cpns/home-nav-bar.vue';
+    import HomeNavBar from './cpns/home-nav-bar.vue'
+    // import HomeSearchBox from './cpns/home-search-box.vue'
+    import homeSearchBox from './cpns/home-search-box.vue';
+
   
   </script>
   
   <style lang="less" scoped>
   
+  .home {
+    padding-bottom: 100px;
+  }
+
   .banner {
     img {
       width: 100%;
-    }
-  }
-
-  .location {
-    display: flex;
-    align-items: center;
-    height: 44px;
-    padding: 0 20px;
-
-    .city {
-      flex: 1;
-    }
-
-    .positon {
-      width: 74px;
-      display: flex;
-      align-items: center;
-    }
-
-    .text {
-      position: relative;
-      top: 2px;
-      font-size: 12px;
-    }
-
-    img {
-      margin-left: 5px;
-      width: 18px;
-      height: 18px;
     }
   }
 
