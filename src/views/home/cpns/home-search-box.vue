@@ -61,7 +61,7 @@ import useCityStore from '@/stores/modules/city';
 import { storeToRefs } from 'pinia';
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
-// import useHomeStore from "@/stores/modules/home"
+import useHomeStore from "@/stores/modules/home"
 import { formatMonthDay, getDiffDays } from "@/utils/format_date"
 
 
@@ -118,8 +118,8 @@ const onConfirm = (value) => {
 }
 
 // 热门建议
-// const homeStore = useHomeStore()
-// const { hotSuggests } = storeToRefs(homeStore)
+const homeStore = useHomeStore()
+const { hotSuggests } = storeToRefs(homeStore)
 
 </script>
 

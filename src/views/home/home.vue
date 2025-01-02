@@ -9,10 +9,14 @@
 </template>
   
   <script setup>
-
+    import useHomeStore from '@/stores/modules/home'
     import HomeNavBar from './cpns/home-nav-bar.vue'
     import homeSearchBox from './cpns/home-search-box.vue';
 
+
+    //发送网络请求
+    const homeStore = useHomeStore()
+    homeStore.fetchHotSuggests()
   
   </script>
   
